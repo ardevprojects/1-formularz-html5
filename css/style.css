@@ -1,0 +1,84 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #ecf0f3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+}
+
+.container {
+  position: relative;
+  width: 506px;
+  height: 820px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 1px 1px 10px #cbced1, -1px -1px 10px white;
+  animation: sheen 1500ms reverse;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.container:hover {
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+@keyframes sheen {
+  100% {
+    transform: translate(0em, 30em);
+  }
+}
+
+.form {
+  text-align: left;
+  margin-top: 30px;
+}
+
+label,
+input,
+button,
+select {
+  display: block;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 12px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input,
+select {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 40px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+button {
+  color: white;
+  background-color: cbced1;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1-formularz-html5</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <form action="" method="post">
+          <label
+            >Name:<input type="text" id="username" placeholder="Your name"
+          /></label>
+          <label
+            >Surname:<input type="text" id="surname" placeholder="Your surname"
+          /></label>
+          <label
+            >Email:<input type="email" id="email" placeholder="Your email"
+          /></label>
+          <label
+            >Pnone Nr:<input
+              type="tel"
+              id="phoneNr"
+              placeholder="Your phone Nr"
+          /></label>
+          <label
+            >City:
+            <select name="city" id="city">
+              <option value="Kraków">Kraków</option>
+              <option value="Warszawa" selected>Warszawa</option>
+              <option value="Gdańsk">Gdańsk</option>
+            </select>
+          </label>
+          <label>Sex:<input type="radio" name="sex" />Yes, please</label>
+          <label><input type="radio" name="sex" />No, I am good</label>
+          <label
+            ><input type="checkbox" name="agreement" />I consent to the
+            processing of my data</label
+          >
+          <label
+            >Your message:<textarea
+              name=""
+              id="message"
+              placeholder="Your message here"
+            ></textarea>
+          </label>
+        </form>
+        <button type="submit">SUBMIT</button>
+      </div>
+    </div>
+  </body>
+</html>
