@@ -1,69 +1,51 @@
 !
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1-formularz-html5</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="form">
-        <form action="https://formspree.io/f/meqdpjlq" method="POST">
-          <label
-            >Name:<input
-              type="text"
-              id="username"
-              name="username"
-              placeholder="Your name"
-          /></label>
-          <label
-            >Surname:<input
-              type="text"
-              id="surname"
-              name="surname"
-              placeholder="Your surname"
-          /></label>
-          <label
-            >Email:<input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-          /></label>
-          <label
-            >Pnone Nr:<input
-              type="tel"
-              id="phoneNr"
-              name="phoneNr"
-              placeholder="Your phone Nr"
-          /></label>
-          <label
-            >City:
-            <select name="city" id="city">
-              <option value="Kraków">Kraków</option>
-              <option value="Warszawa" selected>Warszawa</option>
-              <option value="Gdańsk">Gdańsk</option>
-            </select>
-          </label>
-          <label>Gender:<input type="radio" name="boy" />Boy</label>
-          <label><input type="radio" name="girl" />Girl</label>
-          <label
-            ><input type="checkbox" name="agreement" />I consent to the
-            processing of my data</label
-          >
-          <label
-            >Your message:<textarea
-              name="message"
-              id="message"
-              placeholder="Write your message here"
-            ></textarea>
-          </label>
-        </form>
-        <button type="submit">SUBMIT</button>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1-formularz-html5</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="form">
+      <form action="https://formspree.io/f/meqdpjlq" method="POST">
+        <label>
+          Name: <input type="text" name="username" placeholder="Your name">
+        </label>
+        <label>
+          Surname:<input type="text" name="surname" placeholder="Your surname">
+        </label>
+        <label>
+          Email:<input type="email" name="email" placeholder="Your email">
+        </label>
+        <label>
+          Pnone Nr:<input type="tel" name="phoneNr" placeholder="Your phone Nr">
+        </label>
+        <!-- <label>City:
+          <select name="city" id="city">
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa" selected>Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+          </select>
+        </label> -->
+        <label><input type="radio" name="boy">I am a boy</label>
+        <label><input type="radio" name="girl">I am a girl</label>
+        <label>
+          <input type="checkbox" name="agreement">
+          I consent to the processing of my data
+        </label>
+        <label>
+          Your message:<textarea name="message" id="message" placeholder="Write your message here"></textarea>
+        </label>
+      </form>
+      <button type="submit">SUBMIT</button>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
