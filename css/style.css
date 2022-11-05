@@ -11,14 +11,16 @@ body {
 
 .container {
   position: relative;
-  width: 418px;
-  height: 680px;
+  min-width: 418px;
+  max-width: 30%;
+  min-height: 680px;
+  max-height: 80%;
   border-radius: 18px;
   padding: 36px;
   box-sizing: border-box;
   background: #ecf0f3;
   box-shadow: 1px 1px 10px #cbced1, -1px -1px 10px white;
-  animation: sheen 1500ms reverse;
+  animation: rise 1500ms reverse;
   transition-duration: 1s;
   overflow: hidden;
 }
@@ -27,7 +29,7 @@ body {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
 
-@keyframes sheen {
+@keyframes rise {
   100% {
     transform: translate(0em, 30em);
   }
@@ -52,11 +54,12 @@ label {
   margin-bottom: 6px;
 }
 
-input::placeholder {
-  color: gray;
+/* Does not work!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+input::placeholder:focus {
+  color: rgb(221, 7, 7);
 }
 
-input,
+.type-in,
 select {
   background: #ecf0f3;
   padding: 10px;
@@ -67,9 +70,29 @@ select {
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 
+input:focus {
+  background: #f7fbfe;
+  transition: 0.3s;
+  color: rgb(68, 7, 234);
+
+}
+
+/* Does not work!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+#gender,
+#consent,
+input[type="radio"]
+ {
+  display: inline;
+  align-items: left;
+  place-items: left;
+  place-content: left;
+  justify-content: left;
+  color: rgb(242, 10, 10);
+}
+
 button {
   color: white;
-  background-color: cbced1;
+  background-color: #cbced1;
   height: 36px;
   border-radius: 18px;
   margin-top: 18px;
