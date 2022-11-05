@@ -87,7 +87,7 @@ input[type="radio"]
   place-items: left;
   place-content: left;
   justify-content: left;
-  color: rgb(242, 10, 10);
+  background-color: rgb(242, 10, 10);
 }
 
 button {
